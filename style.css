@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: url('images/background.png') no-repeat top center fixed;
+  background: url('images/background.png') no-repeat top center;
   background-size: cover;
   overflow-y: scroll;
 }
@@ -80,17 +80,30 @@ footer {
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 footer .social-media a {
-  margin: 0 10px;
+  margin: 0;
 }
 
 footer .social-media img {
   height: 24px;
+  margin-right: 10px;
   transition: transform 0.3s;
 }
 
 footer .social-media img:hover {
   transform: scale(1.1);
+}
+
+footer p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 footer .copyright {
@@ -99,7 +112,7 @@ footer .copyright {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.centered-content {
+.heading-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -108,9 +121,6 @@ footer .copyright {
   text-align: center;
   color: #ffffff;
   margin-top: 160px;
-}
-
-.overlay-box {
   background: rgba(0, 0, 0, 0.3);
   padding-top: 80px;
   padding-bottom: 80px;
@@ -118,12 +128,12 @@ footer .copyright {
   text-align: center;
 }
 
-.overlay-box h1 {
+.heading-box h1 {
   font-size: 108px;
   margin: 0;
 }
 
-.overlay-box h4 {
+.heading-box h4 {
   font-size: 24px;
   margin: 10px 0 0;
 }
@@ -175,33 +185,6 @@ footer .copyright {
 
 .btn:hover {
   background-color: #0056b3;
-}
-
-.content {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.work-in-progress {
-  width: 100%;
-  color: #f1f1f1;
-  text-align: center;
-  margin-top: 240px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.work-in-progress p {
-  font-size: 48px;
-}
-
-.parallax {
-  background-image: url('images/background.png');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
 }
 
 @media (max-width: 768px) {
